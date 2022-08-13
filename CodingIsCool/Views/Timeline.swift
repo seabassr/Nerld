@@ -10,7 +10,6 @@ import SwiftUI
 struct Timeline: View {
     @ObservedObject private var postModel = Post()
     @State private var searchText: String = ""
-    @State private var showCompost: Bool = false
     
     init() {
         postModel.fetchPosts()
@@ -37,15 +36,6 @@ struct Timeline: View {
                     }
                 }
                 .frame(height: 40.0)
-                
-                Button {
-                    showCompost = true
-                } label: {
-                    Image(systemName: "square.and.pencil")
-                        .resizable()
-                        .frame(width: 30.0, height: 30.0)
-                        .foregroundColor(.black)
-                }
             }
             .padding(.leading)
             .padding(.trailing)
@@ -54,13 +44,10 @@ struct Timeline: View {
             
             ScrollView(.vertical) {
                 ForEach(postModel.posts, id: \.self) { post in
-                    PostComponent(profile: post.profile, user: post.user, content: post.content)
+                    PostComponent(profile: post.profile, user: post.user, content: post.content, language: post.language)
                 }
             }
         }
-        .sheet(isPresented: $showCompost, content: {
-            Compost()
-        })
     }
 }
 

@@ -13,7 +13,12 @@ struct ContentView: View {
             Timeline()
                 .tabItem() {
                     Image(systemName: "house.fill")
-                    Text("Timeline")
+                    Text("Home")
+                }
+            Compost()
+                .tabItem() {
+                    Image(systemName: "plus.circle.fill")
+                    Text("Post")
                 }
             Profile()
                 .tabItem() {

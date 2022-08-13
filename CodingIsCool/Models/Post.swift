@@ -12,8 +12,8 @@ class Post: ObservableObject {
     @Published var posts = [PostItem]()
     private let db = Firestore.firestore()
     
-    func sendPost(user: String, profile: String, content: String) {
-            db.collection("posts").addDocument(data: ["postDate": Date(), "user": user, "profile": profile, "content": content])
+    func sendPost(user: String, profile: String, content: String, language: String) {
+        db.collection("posts").addDocument(data: ["postDate": Date(), "user": user, "profile": profile, "content": content, "language": language])
     }
     
     func fetchPosts() {
@@ -28,7 +28,8 @@ class Post: ObservableObject {
                 let user = data["user"] as? String ?? ""
                 let profile = data["profile"] as? String ?? ""
                 let content = data["content"] as? String ?? ""
-                return PostItem(id: docId, user: user, profile: profile, content: content)
+                let language = data["language"] as? String ?? ""
+                return PostItem(id: docId, user: user, profile: profile, content: content, language: language)
             }
         })
     }
@@ -39,4 +40,5 @@ struct PostItem: Codable, Identifiable, Hashable {
     var user: String
     var profile: String
     var content: String
+    var language: String
 }
