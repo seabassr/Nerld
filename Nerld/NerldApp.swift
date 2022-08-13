@@ -1,15 +1,15 @@
 //
-//  CodingIsCoolApp.swift
-//  CodingIsCool
+//  NerldApp.swift
+//  Nerld
 //
-//  Created by Sebastian Rodriguez on 8/12/22.
+//  Created by Sebastian Rodriguez on 8/13/22.
 //
 
 import SwiftUI
 import Firebase
 
 @main
-struct CodingIsCoolApp: App {
+struct NerldApp: App {
     init() {
         FirebaseApp.configure()
     }

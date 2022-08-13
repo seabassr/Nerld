@@ -37,9 +37,7 @@ struct Timeline: View {
                 }
                 .frame(height: 40.0)
             }
-            .padding(.leading)
-            .padding(.trailing)
-            .padding(.bottom, 5)
+            .padding([.leading, .trailing, .bottom])
             .background(Color.blue.ignoresSafeArea())
             
             ScrollView(.vertical) {

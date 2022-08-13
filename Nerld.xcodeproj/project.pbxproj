@@ -7,110 +7,109 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0272CB7628A70F40000F8F17 /* CodingIsCoolApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272CB7528A70F40000F8F17 /* CodingIsCoolApp.swift */; };
-		0272CB7828A70F40000F8F17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272CB7728A70F40000F8F17 /* ContentView.swift */; };
-		0272CB7A28A70F42000F8F17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0272CB7928A70F42000F8F17 /* Assets.xcassets */; };
-		0272CB7D28A70F42000F8F17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0272CB7C28A70F42000F8F17 /* Preview Assets.xcassets */; };
-		0272CB8428A71036000F8F17 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272CB8328A71036000F8F17 /* Timeline.swift */; };
-		0272CB8628A71069000F8F17 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272CB8528A71069000F8F17 /* Profile.swift */; };
-		0272CB9528A72CF6000F8F17 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272CB9428A72CF6000F8F17 /* Post.swift */; };
-		0272CB9A28A75BA7000F8F17 /* PostComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272CB9928A75BA7000F8F17 /* PostComponent.swift */; };
-		0272CB9C28A76A0A000F8F17 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0272CB9B28A76A0A000F8F17 /* GoogleService-Info.plist */; };
-		0272CB9F28A76AE0000F8F17 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0272CB9E28A76AE0000F8F17 /* FirebaseFirestore */; };
-		0272CBA128A76AE0000F8F17 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 0272CBA028A76AE0000F8F17 /* FirebaseFirestoreCombine-Community */; };
-		0272CBA328A76AE0000F8F17 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0272CBA228A76AE0000F8F17 /* FirebaseFirestoreSwift */; };
-		0272CBA528A77843000F8F17 /* Compost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0272CBA428A77843000F8F17 /* Compost.swift */; };
+		0299DDE628A7D48200578A2F /* NerldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0299DDE528A7D48200578A2F /* NerldApp.swift */; };
+		0299DDEA28A7D48200578A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0299DDE928A7D48200578A2F /* Assets.xcassets */; };
+		0299DDED28A7D48200578A2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0299DDEC28A7D48200578A2F /* Preview Assets.xcassets */; };
+		0299DE0028A7D4AC00578A2F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0299DDF528A7D4AB00578A2F /* Post.swift */; };
+		0299DE0128A7D4AC00578A2F /* Compost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0299DDF728A7D4AB00578A2F /* Compost.swift */; };
+		0299DE0228A7D4AC00578A2F /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0299DDF828A7D4AB00578A2F /* Timeline.swift */; };
+		0299DE0328A7D4AC00578A2F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0299DDF928A7D4AB00578A2F /* Profile.swift */; };
+		0299DE0428A7D4AC00578A2F /* ProfileComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0299DDFB28A7D4AB00578A2F /* ProfileComponent.swift */; };
+		0299DE0528A7D4AC00578A2F /* PostComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0299DDFC28A7D4AC00578A2F /* PostComponent.swift */; };
+		0299DE0628A7D4AC00578A2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0299DDFD28A7D4AC00578A2F /* ContentView.swift */; };
+		0299DE0728A7D4AC00578A2F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0299DDFE28A7D4AC00578A2F /* GoogleService-Info.plist */; };
+		0299DE0A28A7D56E00578A2F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0299DE0928A7D56E00578A2F /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0272CB7228A70F40000F8F17 /* CodingIsCool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingIsCool.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0272CB7528A70F40000F8F17 /* CodingIsCoolApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingIsCoolApp.swift; sourceTree = "<group>"; };
-		0272CB7728A70F40000F8F17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0272CB7928A70F42000F8F17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0272CB7C28A70F42000F8F17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0272CB8328A71036000F8F17 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
-		0272CB8528A71069000F8F17 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		0272CB9428A72CF6000F8F17 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		0272CB9928A75BA7000F8F17 /* PostComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComponent.swift; sourceTree = "<group>"; };
-		0272CB9B28A76A0A000F8F17 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		0272CBA428A77843000F8F17 /* Compost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compost.swift; sourceTree = "<group>"; };
+		0299DDE228A7D48200578A2F /* Nerld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nerld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0299DDE528A7D48200578A2F /* NerldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NerldApp.swift; sourceTree = "<group>"; };
+		0299DDE928A7D48200578A2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0299DDEC28A7D48200578A2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0299DDF528A7D4AB00578A2F /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		0299DDF728A7D4AB00578A2F /* Compost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compost.swift; sourceTree = "<group>"; };
+		0299DDF828A7D4AB00578A2F /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		0299DDF928A7D4AB00578A2F /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		0299DDFB28A7D4AB00578A2F /* ProfileComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileComponent.swift; sourceTree = "<group>"; };
+		0299DDFC28A7D4AC00578A2F /* PostComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostComponent.swift; sourceTree = "<group>"; };
+		0299DDFD28A7D4AC00578A2F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0299DDFE28A7D4AC00578A2F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0272CB6F28A70F40000F8F17 /* Frameworks */ = {
+		0299DDDF28A7D48200578A2F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0272CB9F28A76AE0000F8F17 /* FirebaseFirestore in Frameworks */,
-				0272CBA128A76AE0000F8F17 /* FirebaseFirestoreCombine-Community in Frameworks */,
-				0272CBA328A76AE0000F8F17 /* FirebaseFirestoreSwift in Frameworks */,
+				0299DE0A28A7D56E00578A2F /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0272CB6928A70F3F000F8F17 = {
+		0299DDD928A7D48200578A2F = {
 			isa = PBXGroup;
 			children = (
-				0272CB7428A70F40000F8F17 /* CodingIsCool */,
-				0272CB7328A70F40000F8F17 /* Products */,
+				0299DDE428A7D48200578A2F /* Nerld */,
+				0299DDE328A7D48200578A2F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0272CB7328A70F40000F8F17 /* Products */ = {
+		0299DDE328A7D48200578A2F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0272CB7228A70F40000F8F17 /* CodingIsCool.app */,
+				0299DDE228A7D48200578A2F /* Nerld.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0272CB7428A70F40000F8F17 /* CodingIsCool */ = {
+		0299DDE428A7D48200578A2F /* Nerld */ = {
 			isa = PBXGroup;
 			children = (
-				0272CB9B28A76A0A000F8F17 /* GoogleService-Info.plist */,
-				0272CB9328A72CE8000F8F17 /* Models */,
-				0272CB7528A70F40000F8F17 /* CodingIsCoolApp.swift */,
-				0272CB8728A710DE000F8F17 /* Views */,
-				0272CB7928A70F42000F8F17 /* Assets.xcassets */,
-				0272CB7B28A70F42000F8F17 /* Preview Content */,
+				0299DDFE28A7D4AC00578A2F /* GoogleService-Info.plist */,
+				0299DDF428A7D4AB00578A2F /* Models */,
+				0299DDF628A7D4AB00578A2F /* Views */,
+				0299DDE528A7D48200578A2F /* NerldApp.swift */,
+				0299DDE928A7D48200578A2F /* Assets.xcassets */,
+				0299DDEB28A7D48200578A2F /* Preview Content */,
 			);
-			path = CodingIsCool;
+			path = Nerld;
 			sourceTree = "<group>";
 		};
-		0272CB7B28A70F42000F8F17 /* Preview Content */ = {
+		0299DDEB28A7D48200578A2F /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				0272CB7C28A70F42000F8F17 /* Preview Assets.xcassets */,
+				0299DDEC28A7D48200578A2F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		0272CB8728A710DE000F8F17 /* Views */ = {
+		0299DDF428A7D4AB00578A2F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0272CB7728A70F40000F8F17 /* ContentView.swift */,
-				0272CB9828A75B8B000F8F17 /* Components */,
-				0272CB8328A71036000F8F17 /* Timeline.swift */,
-				0272CB8528A71069000F8F17 /* Profile.swift */,
-				0272CBA428A77843000F8F17 /* Compost.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		0272CB9328A72CE8000F8F17 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				0272CB9428A72CF6000F8F17 /* Post.swift */,
+				0299DDF528A7D4AB00578A2F /* Post.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		0272CB9828A75B8B000F8F17 /* Components */ = {
+		0299DDF628A7D4AB00578A2F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				0272CB9928A75BA7000F8F17 /* PostComponent.swift */,
+				0299DDF728A7D4AB00578A2F /* Compost.swift */,
+				0299DDF828A7D4AB00578A2F /* Timeline.swift */,
+				0299DDF928A7D4AB00578A2F /* Profile.swift */,
+				0299DDFA28A7D4AB00578A2F /* Components */,
+				0299DDFD28A7D4AC00578A2F /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0299DDFA28A7D4AB00578A2F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0299DDFB28A7D4AB00578A2F /* ProfileComponent.swift */,
+				0299DDFC28A7D4AC00578A2F /* PostComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -118,44 +117,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0272CB7128A70F40000F8F17 /* CodingIsCool */ = {
+		0299DDE128A7D48200578A2F /* Nerld */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0272CB8028A70F42000F8F17 /* Build configuration list for PBXNativeTarget "CodingIsCool" */;
+			buildConfigurationList = 0299DDF028A7D48200578A2F /* Build configuration list for PBXNativeTarget "Nerld" */;
 			buildPhases = (
-				0272CB6E28A70F40000F8F17 /* Sources */,
-				0272CB6F28A70F40000F8F17 /* Frameworks */,
-				0272CB7028A70F40000F8F17 /* Resources */,
+				0299DDDE28A7D48200578A2F /* Sources */,
+				0299DDDF28A7D48200578A2F /* Frameworks */,
+				0299DDE028A7D48200578A2F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CodingIsCool;
+			name = Nerld;
 			packageProductDependencies = (
-				0272CB9E28A76AE0000F8F17 /* FirebaseFirestore */,
-				0272CBA028A76AE0000F8F17 /* FirebaseFirestoreCombine-Community */,
-				0272CBA228A76AE0000F8F17 /* FirebaseFirestoreSwift */,
+				0299DE0928A7D56E00578A2F /* FirebaseFirestore */,
 			);
-			productName = CodingIsCool;
-			productReference = 0272CB7228A70F40000F8F17 /* CodingIsCool.app */;
+			productName = Nerld;
+			productReference = 0299DDE228A7D48200578A2F /* Nerld.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0272CB6A28A70F3F000F8F17 /* Project object */ = {
+		0299DDDA28A7D48200578A2F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					0272CB7128A70F40000F8F17 = {
+					0299DDE128A7D48200578A2F = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 0272CB6D28A70F3F000F8F17 /* Build configuration list for PBXProject "CodingIsCool" */;
+			buildConfigurationList = 0299DDDD28A7D48200578A2F /* Build configuration list for PBXProject "Nerld" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -163,51 +160,52 @@
 				en,
 				Base,
 			);
-			mainGroup = 0272CB6928A70F3F000F8F17;
+			mainGroup = 0299DDD928A7D48200578A2F;
 			packageReferences = (
-				0272CB9D28A76AE0000F8F17 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				0299DE0828A7D56E00578A2F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
-			productRefGroup = 0272CB7328A70F40000F8F17 /* Products */;
+			productRefGroup = 0299DDE328A7D48200578A2F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0272CB7128A70F40000F8F17 /* CodingIsCool */,
+				0299DDE128A7D48200578A2F /* Nerld */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0272CB7028A70F40000F8F17 /* Resources */ = {
+		0299DDE028A7D48200578A2F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0272CB7D28A70F42000F8F17 /* Preview Assets.xcassets in Resources */,
-				0272CB7A28A70F42000F8F17 /* Assets.xcassets in Resources */,
-				0272CB9C28A76A0A000F8F17 /* GoogleService-Info.plist in Resources */,
+				0299DDED28A7D48200578A2F /* Preview Assets.xcassets in Resources */,
+				0299DDEA28A7D48200578A2F /* Assets.xcassets in Resources */,
+				0299DE0728A7D4AC00578A2F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0272CB6E28A70F40000F8F17 /* Sources */ = {
+		0299DDDE28A7D48200578A2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0272CBA528A77843000F8F17 /* Compost.swift in Sources */,
-				0272CB8428A71036000F8F17 /* Timeline.swift in Sources */,
-				0272CB8628A71069000F8F17 /* Profile.swift in Sources */,
-				0272CB9528A72CF6000F8F17 /* Post.swift in Sources */,
-				0272CB9A28A75BA7000F8F17 /* PostComponent.swift in Sources */,
-				0272CB7828A70F40000F8F17 /* ContentView.swift in Sources */,
-				0272CB7628A70F40000F8F17 /* CodingIsCoolApp.swift in Sources */,
+				0299DE0228A7D4AC00578A2F /* Timeline.swift in Sources */,
+				0299DDE628A7D48200578A2F /* NerldApp.swift in Sources */,
+				0299DE0328A7D4AC00578A2F /* Profile.swift in Sources */,
+				0299DE0428A7D4AC00578A2F /* ProfileComponent.swift in Sources */,
+				0299DE0628A7D4AC00578A2F /* ContentView.swift in Sources */,
+				0299DE0528A7D4AC00578A2F /* PostComponent.swift in Sources */,
+				0299DE0028A7D4AC00578A2F /* Post.swift in Sources */,
+				0299DE0128A7D4AC00578A2F /* Compost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		0272CB7E28A70F42000F8F17 /* Debug */ = {
+		0299DDEE28A7D48200578A2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -267,7 +265,7 @@
 			};
 			name = Debug;
 		};
-		0272CB7F28A70F42000F8F17 /* Release */ = {
+		0299DDEF28A7D48200578A2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -321,14 +319,14 @@
 			};
 			name = Release;
 		};
-		0272CB8128A70F42000F8F17 /* Debug */ = {
+		0299DDF128A7D48200578A2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CodingIsCool/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Nerld/Preview Content\"";
 				DEVELOPMENT_TEAM = 7897CKP46X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -342,7 +340,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Sebastain-Rodriguez.CodingIsCool";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sebastain-Rodriguez.Nerld";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -350,14 +348,14 @@
 			};
 			name = Debug;
 		};
-		0272CB8228A70F42000F8F17 /* Release */ = {
+		0299DDF228A7D48200578A2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CodingIsCool/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Nerld/Preview Content\"";
 				DEVELOPMENT_TEAM = 7897CKP46X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -371,7 +369,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Sebastain-Rodriguez.CodingIsCool";
+				PRODUCT_BUNDLE_IDENTIFIER = "Sebastain-Rodriguez.Nerld";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -382,20 +380,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0272CB6D28A70F3F000F8F17 /* Build configuration list for PBXProject "CodingIsCool" */ = {
+		0299DDDD28A7D48200578A2F /* Build configuration list for PBXProject "Nerld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0272CB7E28A70F42000F8F17 /* Debug */,
-				0272CB7F28A70F42000F8F17 /* Release */,
+				0299DDEE28A7D48200578A2F /* Debug */,
+				0299DDEF28A7D48200578A2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0272CB8028A70F42000F8F17 /* Build configuration list for PBXNativeTarget "CodingIsCool" */ = {
+		0299DDF028A7D48200578A2F /* Build configuration list for PBXNativeTarget "Nerld" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0272CB8128A70F42000F8F17 /* Debug */,
-				0272CB8228A70F42000F8F17 /* Release */,
+				0299DDF128A7D48200578A2F /* Debug */,
+				0299DDF228A7D48200578A2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -403,7 +401,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0272CB9D28A76AE0000F8F17 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		0299DE0828A7D56E00578A2F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
@@ -414,22 +412,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0272CB9E28A76AE0000F8F17 /* FirebaseFirestore */ = {
+		0299DE0928A7D56E00578A2F /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0272CB9D28A76AE0000F8F17 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 0299DE0828A7D56E00578A2F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
-		};
-		0272CBA028A76AE0000F8F17 /* FirebaseFirestoreCombine-Community */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0272CB9D28A76AE0000F8F17 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = "FirebaseFirestoreCombine-Community";
-		};
-		0272CBA228A76AE0000F8F17 /* FirebaseFirestoreSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0272CB9D28A76AE0000F8F17 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFirestoreSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 0272CB6A28A70F3F000F8F17 /* Project object */;
+	rootObject = 0299DDDA28A7D48200578A2F /* Project object */;
 }
