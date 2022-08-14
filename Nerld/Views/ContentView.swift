@@ -39,7 +39,7 @@ struct ContentView: View {
                     RoundedRectangle(cornerRadius: 10)
                         .foregroundColor(Color.gray)
                     
-                    TextField(" Password:", text: $password)
+                    SecureField(" Password:", text: $password)
                         .keyboardType(.alphabet)
                 }
                 .frame(height: 50.0)
