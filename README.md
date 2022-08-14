@@ -4,6 +4,8 @@ Social media app for iOS, for curious/beginners in programming.
 ## Description
 This iOS app will allow users to share snippets of their code, to everyone on the platform. All posts and users will be stored in Firebase Firestore. Also, users will be be able to customize their profile with preset profile emojis and colors, expressing themselves. Each user will have a unique identification code, which will allows users to save their information on our back-end and login on any iOS device.
 
+As of right now, sign up isn't available. You can use username: "User", password: "Test" as the login.
+
 <img src='/walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Requirements
