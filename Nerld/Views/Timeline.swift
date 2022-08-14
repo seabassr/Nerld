@@ -40,8 +40,9 @@ class Post: ObservableObject {
 }
 
 struct Timeline: View {
-    @State private var searchText: String = ""
     @ObservedObject private var postModel = Post()
+    @State private var searchText: String = ""
+    private let contentBG = RadialGradient(gradient: Gradient(colors: [Color.mint, Color.indigo]), center: .center, startRadius: 0, endRadius: 450)
     
     init() {
         postModel.fetchPosts()
@@ -50,21 +51,9 @@ struct Timeline: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 30)
-                        .foregroundColor(Color.gray)
-                    
-                    HStack{
-                        Image(systemName: "magnifyingglass")
-                            .padding(.leading)
-                        TextField("Search", text: $searchText)
-                            .keyboardType(.alphabet)
-                    }
-                }
-                .frame(height: 40.0)
+                Spacer()
             }
-            .padding([.leading, .trailing, .bottom])
-            .background(Color.blue.ignoresSafeArea())
+            .background(.regularMaterial)
             
             ScrollView(.vertical) {
                 ForEach(postModel.posts, id: \.self) { post in
@@ -72,6 +61,7 @@ struct Timeline: View {
                 }
             }
         }
+        .background(contentBG.ignoresSafeArea())
     }
 }
 

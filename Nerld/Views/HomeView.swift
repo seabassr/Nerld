@@ -45,7 +45,6 @@ struct HomeView: View {
         }
         .navigationBarTitle("")
         .navigationBarHidden(true)
-        .navigationBarBackButtonHidden(true)
         .navigationBarTitleDisplayMode(.inline)
     }
 }

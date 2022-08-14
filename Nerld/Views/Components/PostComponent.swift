@@ -36,7 +36,7 @@ struct PostComponent: View {
         }
         .frame(minWidth: 0, maxWidth: .infinity)
         .padding()
-        .background(.thinMaterial)
+        .background(.ultraThinMaterial)
         .clipShape(RoundedRectangle(cornerRadius: 10))
     }
 }

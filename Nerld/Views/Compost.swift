@@ -16,16 +16,26 @@ struct Compost: View {
     private var profile: String = ""
     private var languages: [String] = ["Python", "Java", "Swift", "Kotlin", "HTML/CSS", "Javascript"]
     private let db = Firestore.firestore()
+    private let contentBG = RadialGradient(gradient: Gradient(colors: [Color.mint, Color.indigo]), center: .center, startRadius: 0, endRadius: 450)
+
     
     init(user: String, profile: String) {
         self.user = user
         self.profile = profile
+        UITextView.appearance().backgroundColor = .clear
     }
     
     var body: some View {
         VStack {
+            HStack {
+                Spacer()
+            }
+            .background(.regularMaterial)
+            
             TextEditor(text: $content)
                 .keyboardType(.alphabet)
+                .background(Color.black)
+                .foregroundColor(.white)
                 .padding()
             
             Text("Language:")
@@ -60,6 +70,7 @@ struct Compost: View {
         .alert("Content can't be empty!", isPresented: $showingAlert) {
             Button("OK", role: .cancel) { }
         }
+        .background(contentBG.ignoresSafeArea())
     }
     
     func sendContent() {
