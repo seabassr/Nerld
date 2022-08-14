@@ -8,17 +8,24 @@
 import SwiftUI
 
 struct Profile: View {
+    @ObservedObject private var userModel = User()
     @State private var user: String = ""
-    @State private var profile: String = "👾"
+    @State private var profile: String = ""
     private let profilePick: [String] = ["👽", "👻", "👾", "🤠", "🤡", "💩", "💀" , "🤖"]
+    private let colorPick: [[Double]] = [[0.0, 0.0, 0.0], [0.0, 0.6, 1.0], [1.0, 0.5, 1.0], [0.6, 0.3, 1.0], [1.0, 0.0, 0.5], [1.0, 0.5, 0.0], [0.5, 0.9, 0.3]]
+    
+    init(userID: String) {
+        connect(userID: userID)
+    }
     
     var body: some View {
         ScrollView(.vertical) {
-            Image("profile")
-                .resizable()
-                .frame(width: 300.0, height: 300.0)
+            Text(profile)
+                .font(.system(size: 200))
+                .frame(width: 250.0, height: 250.0)
                 .clipShape(Circle())
                 .overlay(Circle().stroke(Color.black, lineWidth: 1))
+                .padding(.bottom)
             
             Text("Username:")
                 .font(.headline)
@@ -31,26 +38,51 @@ struct Profile: View {
             Text("Profile Picture:")
                 .font(.headline)
             
-            ScrollView(.vertical, showsIndicators: false) {
-                VStack {
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
                     ForEach(profilePick, id: \.self) { i in
-                        Button(i, action: {profile = i})
-                            .font(.system(size: 60))
+                        Button(i, action: {})
+                            .font(.system(size: 55))
                             .frame(width: 70, height: 70)
                             .background(
                                 Circle()
-                                    .fill(.white)
+                                    .fill(.black)
                             )
                     }
                 }
                 .padding([.trailing, .leading, .bottom])
             }
+            
+            Text("Profile Color:")
+                .font(.headline)
+            
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack {
+                    ForEach(colorPick, id: \.self) { i in
+                        Button(action: {
+                            
+                        }, label: {
+                            Circle()
+                                .fill(Color(red: i[0], green: i[1], blue: i[2]))
+                                .frame(width: 60, height: 60)
+                        })
+                    }
+                }
+                .padding([.trailing, .leading])
+            }
         }
+    }
+    
+    func connect(userID: String) {
+        userModel.getUser(userID: userID, completion: {
+            user = userModel.userData.user
+            profile = userModel.userData.profile
+        })
     }
 }
 
 struct Personal_Previews: PreviewProvider {
     static var previews: some View {
-        Profile()
+        Profile(userID: "FKY8TsAjObSQIXl5uki1")
     }
 }

@@ -17,9 +17,7 @@ struct Compost: View {
     var body: some View {
         VStack {
             TextEditor(text: $content)
-                .frame(width: .infinity, height: 300)
                 .keyboardType(.alphabet)
-                .border(.black)
                 .padding()
             
             Text("Language:")
@@ -41,6 +39,7 @@ struct Compost: View {
                 sendContent()
             } label: {
                 RoundedRectangle(cornerRadius: 20)
+                    .fill(.purple)
                     .overlay(Text("Post").foregroundColor(.white))
                     .frame(width: 100, height: 50)
             }

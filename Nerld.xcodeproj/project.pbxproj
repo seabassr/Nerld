@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0211F01A28A7F5470055BC29 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0211F01928A7F5470055BC29 /* GoogleService-Info.plist */; };
+		0211F01C28A7F5B80055BC29 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0211F01B28A7F5B80055BC29 /* User.swift */; };
+		027B160128A844D8006361D4 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027B160028A844D8006361D4 /* Data.swift */; };
+		027B160328A84581006361D4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027B160228A84581006361D4 /* HomeView.swift */; };
 		0299DDE628A7D48200578A2F /* NerldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0299DDE528A7D48200578A2F /* NerldApp.swift */; };
 		0299DDEA28A7D48200578A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0299DDE928A7D48200578A2F /* Assets.xcassets */; };
 		0299DDED28A7D48200578A2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0299DDEC28A7D48200578A2F /* Preview Assets.xcassets */; };
@@ -14,14 +18,16 @@
 		0299DE0128A7D4AC00578A2F /* Compost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0299DDF728A7D4AB00578A2F /* Compost.swift */; };
 		0299DE0228A7D4AC00578A2F /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0299DDF828A7D4AB00578A2F /* Timeline.swift */; };
 		0299DE0328A7D4AC00578A2F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0299DDF928A7D4AB00578A2F /* Profile.swift */; };
-		0299DE0428A7D4AC00578A2F /* ProfileComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0299DDFB28A7D4AB00578A2F /* ProfileComponent.swift */; };
 		0299DE0528A7D4AC00578A2F /* PostComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0299DDFC28A7D4AC00578A2F /* PostComponent.swift */; };
 		0299DE0628A7D4AC00578A2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0299DDFD28A7D4AC00578A2F /* ContentView.swift */; };
-		0299DE0728A7D4AC00578A2F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0299DDFE28A7D4AC00578A2F /* GoogleService-Info.plist */; };
 		0299DE0A28A7D56E00578A2F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0299DE0928A7D56E00578A2F /* FirebaseFirestore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0211F01928A7F5470055BC29 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0211F01B28A7F5B80055BC29 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		027B160028A844D8006361D4 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		027B160228A84581006361D4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0299DDE228A7D48200578A2F /* Nerld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nerld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0299DDE528A7D48200578A2F /* NerldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NerldApp.swift; sourceTree = "<group>"; };
 		0299DDE928A7D48200578A2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,10 +36,8 @@
 		0299DDF728A7D4AB00578A2F /* Compost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Compost.swift; sourceTree = "<group>"; };
 		0299DDF828A7D4AB00578A2F /* Timeline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
 		0299DDF928A7D4AB00578A2F /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		0299DDFB28A7D4AB00578A2F /* ProfileComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileComponent.swift; sourceTree = "<group>"; };
 		0299DDFC28A7D4AC00578A2F /* PostComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostComponent.swift; sourceTree = "<group>"; };
 		0299DDFD28A7D4AC00578A2F /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0299DDFE28A7D4AC00578A2F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +71,7 @@
 		0299DDE428A7D48200578A2F /* Nerld */ = {
 			isa = PBXGroup;
 			children = (
-				0299DDFE28A7D4AC00578A2F /* GoogleService-Info.plist */,
+				0211F01928A7F5470055BC29 /* GoogleService-Info.plist */,
 				0299DDF428A7D4AB00578A2F /* Models */,
 				0299DDF628A7D4AB00578A2F /* Views */,
 				0299DDE528A7D48200578A2F /* NerldApp.swift */,
@@ -89,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				0299DDF528A7D4AB00578A2F /* Post.swift */,
+				0211F01B28A7F5B80055BC29 /* User.swift */,
+				027B160028A844D8006361D4 /* Data.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -101,6 +107,7 @@
 				0299DDF928A7D4AB00578A2F /* Profile.swift */,
 				0299DDFA28A7D4AB00578A2F /* Components */,
 				0299DDFD28A7D4AC00578A2F /* ContentView.swift */,
+				027B160228A84581006361D4 /* HomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -108,7 +115,6 @@
 		0299DDFA28A7D4AB00578A2F /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				0299DDFB28A7D4AB00578A2F /* ProfileComponent.swift */,
 				0299DDFC28A7D4AC00578A2F /* PostComponent.swift */,
 			);
 			path = Components;
@@ -180,7 +186,7 @@
 			files = (
 				0299DDED28A7D48200578A2F /* Preview Assets.xcassets in Resources */,
 				0299DDEA28A7D48200578A2F /* Assets.xcassets in Resources */,
-				0299DE0728A7D4AC00578A2F /* GoogleService-Info.plist in Resources */,
+				0211F01A28A7F5470055BC29 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,13 +197,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				027B160328A84581006361D4 /* HomeView.swift in Sources */,
 				0299DE0228A7D4AC00578A2F /* Timeline.swift in Sources */,
 				0299DDE628A7D48200578A2F /* NerldApp.swift in Sources */,
 				0299DE0328A7D4AC00578A2F /* Profile.swift in Sources */,
-				0299DE0428A7D4AC00578A2F /* ProfileComponent.swift in Sources */,
 				0299DE0628A7D4AC00578A2F /* ContentView.swift in Sources */,
+				0211F01C28A7F5B80055BC29 /* User.swift in Sources */,
 				0299DE0528A7D4AC00578A2F /* PostComponent.swift in Sources */,
 				0299DE0028A7D4AC00578A2F /* Post.swift in Sources */,
+				027B160128A844D8006361D4 /* Data.swift in Sources */,
 				0299DE0128A7D4AC00578A2F /* Compost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -18,12 +18,6 @@ struct Timeline: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack {
-                Image("profile")
-                    .resizable()
-                    .frame(width: 40.0, height: 40.0)
-                    .clipShape(Circle())
-                    .overlay(Circle().stroke(Color.black, lineWidth: 1))
-                
                 ZStack {
                     RoundedRectangle(cornerRadius: 30)
                         .foregroundColor(Color.gray)

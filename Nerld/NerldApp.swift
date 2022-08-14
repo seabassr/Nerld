@@ -17,6 +17,7 @@ struct NerldApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(Data())
         }
     }
 }
