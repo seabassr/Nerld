@@ -6,10 +6,42 @@
 //
 
 import SwiftUI
+import Firebase
+
+struct PostItem: Codable, Identifiable, Hashable {
+    var id: String?
+    var user: String
+    var profile: String
+    var content: String
+    var language: String
+}
+
+class Post: ObservableObject {
+    @Published var posts = [PostItem]()
+    private let db = Firestore.firestore()
+    
+    func fetchPosts() {
+        db.collection("posts").order(by: "postDate", descending: true).addSnapshotListener( {(snapshot, error) in
+            guard let documents = snapshot?.documents else {
+                return
+            }
+            
+            self.posts = documents.map { docSnapshot -> PostItem in
+                let data = docSnapshot.data()
+                let docId = docSnapshot.documentID
+                let user = data["user"] as? String ?? ""
+                let profile = data["profile"] as? String ?? ""
+                let content = data["content"] as? String ?? ""
+                let language = data["language"] as? String ?? ""
+                return PostItem(id: docId, user: user, profile: profile, content: content, language: language)
+            }
+        })
+    }
+}
 
 struct Timeline: View {
-    @ObservedObject private var postModel = Post()
     @State private var searchText: String = ""
+    @ObservedObject private var postModel = Post()
     
     init() {
         postModel.fetchPosts()

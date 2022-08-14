@@ -8,15 +8,10 @@
 import SwiftUI
 
 struct Profile: View {
-    @ObservedObject private var userModel = User()
     @State private var user: String = ""
     @State private var profile: String = ""
     private let profilePick: [String] = ["👽", "👻", "👾", "🤠", "🤡", "💩", "💀" , "🤖"]
     private let colorPick: [[Double]] = [[0.0, 0.0, 0.0], [0.0, 0.6, 1.0], [1.0, 0.5, 1.0], [0.6, 0.3, 1.0], [1.0, 0.0, 0.5], [1.0, 0.5, 0.0], [0.5, 0.9, 0.3]]
-    
-    init(userID: String) {
-        connect(userID: userID)
-    }
     
     var body: some View {
         ScrollView(.vertical) {
@@ -72,17 +67,10 @@ struct Profile: View {
             }
         }
     }
-    
-    func connect(userID: String) {
-        userModel.getUser(userID: userID, completion: {
-            user = userModel.userData.user
-            profile = userModel.userData.profile
-        })
-    }
 }
 
 struct Personal_Previews: PreviewProvider {
     static var previews: some View {
-        Profile(userID: "FKY8TsAjObSQIXl5uki1")
+        Profile()
     }
 }

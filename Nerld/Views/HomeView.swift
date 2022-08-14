@@ -8,6 +8,14 @@
 import SwiftUI
 
 struct HomeView: View {
+    private var user: String = ""
+    private var profile: String = ""
+    
+    init(user: String, profile: String) {
+        self.user = user
+        self.profile = profile
+    }
+    
     var body: some View {
         TabView {
             Timeline()
@@ -15,12 +23,12 @@ struct HomeView: View {
                     Image(systemName: "house.fill")
                     Text("Home")
                 }
-            Compost()
+            Compost(user: user, profile: profile)
                 .tabItem() {
                     Image(systemName: "plus.circle.fill")
                     Text("Post")
                 }
-            Profile(userID: "FKY8TsAjObSQIXl5uki1")
+            Profile()
                 .tabItem() {
                     Image(systemName: "person.fill")
                     Text("Profile")
@@ -31,6 +39,6 @@ struct HomeView: View {
 
 struct TabView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeView(user: "UserTest", profile: "🥰")
     }
 }

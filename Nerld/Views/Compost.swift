@@ -6,13 +6,21 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct Compost: View {
-    @ObservedObject private var postModel = Post()
     @State private var content: String = ""
-    @State private var showingAlert = false
     @State private var language: String = "Python"
+    @State private var showingAlert = false
+    private var user = ""
+    private var profile = ""
     private var languages: [String] = ["Python", "Java", "Swift", "Kotlin", "HTML/CSS", "Javascript"]
+    private let db = Firestore.firestore()
+    
+    init(user: String, profile: String) {
+        self.user = user
+        self.profile = profile
+    }
     
     var body: some View {
         VStack {
@@ -53,7 +61,7 @@ struct Compost: View {
     
     func sendContent() {
         if (content != "") {
-            postModel.sendPost(user: "user", profile: "👏", content: self.content, language: self.language)
+            db.collection("posts").addDocument(data: ["postDate": Date(), "user": user, "profile": profile, "content": content, "language": language])
             self.content = ""
         }
         else {
@@ -64,6 +72,6 @@ struct Compost: View {
 
 struct Compost_Previews: PreviewProvider {
     static var previews: some View {
-        Compost()
+        Compost(user: "UserTest", profile: "🥰")
     }
 }
