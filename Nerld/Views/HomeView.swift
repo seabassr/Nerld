@@ -26,7 +26,7 @@ struct HomeView: View {
                     }
                 }
                 .tag(0)
-            Compost(user: user, profile: profile)
+            Compost(user: self.user, profile: self.profile)
                 .tabItem() {
                     VStack {
                         Image(systemName: "plus.circle.fill")
@@ -34,7 +34,7 @@ struct HomeView: View {
                     }
                 }
                 .tag(1)
-            Profile()
+            Profile(username: user, profilepic: profile)
                 .tabItem() {
                     VStack {
                         Image(systemName: "person.fill")
@@ -45,6 +45,7 @@ struct HomeView: View {
         }
         .navigationBarTitle("")
         .navigationBarHidden(true)
+        .navigationBarBackButtonHidden(true)
         .navigationBarTitleDisplayMode(.inline)
     }
 }

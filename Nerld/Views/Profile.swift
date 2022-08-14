@@ -13,13 +13,20 @@ struct Profile: View {
     private let profilePick: [String] = ["👽", "👻", "👾", "🤠", "🤡", "💩", "💀" , "🤖"]
     private let colorPick: [[Double]] = [[0.0, 0.0, 0.0], [0.0, 0.6, 1.0], [1.0, 0.5, 1.0], [0.6, 0.3, 1.0], [1.0, 0.0, 0.5], [1.0, 0.5, 0.0], [0.5, 0.9, 0.3]]
     
+    init(username: String, profilepic: String) {
+        _user = State(initialValue: username)
+        _profile = State(initialValue: profilepic)
+    }
+    
     var body: some View {
         ScrollView(.vertical) {
             Text(profile)
                 .font(.system(size: 200))
                 .frame(width: 250.0, height: 250.0)
-                .clipShape(Circle())
-                .overlay(Circle().stroke(Color.black, lineWidth: 1))
+                .background(
+                    Circle()
+                        .fill(.black)
+                )
                 .padding(.bottom)
             
             Text("Username:")
@@ -66,11 +73,14 @@ struct Profile: View {
                 .padding([.trailing, .leading])
             }
         }
+        .onTapGesture {
+            UIApplication.shared.endEditing()
+        }
     }
 }
 
 struct Personal_Previews: PreviewProvider {
     static var previews: some View {
-        Profile()
+        Profile(username: "User", profilepic: "🥰")
     }
 }

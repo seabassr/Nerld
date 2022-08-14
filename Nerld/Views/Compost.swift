@@ -11,9 +11,9 @@ import Firebase
 struct Compost: View {
     @State private var content: String = ""
     @State private var language: String = "Python"
-    @State private var showingAlert = false
-    private var user = ""
-    private var profile = ""
+    @State private var showingAlert: Bool = false
+    private var user: String = ""
+    private var profile: String = ""
     private var languages: [String] = ["Python", "Java", "Swift", "Kotlin", "HTML/CSS", "Javascript"]
     private let db = Firestore.firestore()
     
@@ -53,6 +53,9 @@ struct Compost: View {
             }
             
             Spacer()
+        }
+        .onTapGesture {
+            UIApplication.shared.endEditing()
         }
         .alert("Content can't be empty!", isPresented: $showingAlert) {
             Button("OK", role: .cancel) { }

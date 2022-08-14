@@ -16,11 +16,11 @@ struct UserItem: Codable, Identifiable, Hashable {
 
 struct ContentView: View {
     @State private var userData = [UserItem]()
-    @State private var username = ""
-    @State private var password = ""
-    @State private var profile = ""
-    @State private var home = false
-    @State private var showIn = false
+    @State private var username: String = ""
+    @State private var password: String = ""
+    @State private var profile: String = ""
+    @State private var home: Bool = false
+    @State private var showIn: Bool = false
     private let db = Firestore.firestore()
     
     var body: some View {
@@ -64,8 +64,13 @@ struct ContentView: View {
                 
                 NavigationLink(destination: HomeView(user: username, profile: profile), isActive: $home) {EmptyView()}
             }
+            .onTapGesture {
+                UIApplication.shared.endEditing()
+            }
             .navigationBarTitle("")
-            .navigationBarHidden(true)            .padding()
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
+            .padding()
             .alert("Username or password is incorrect!", isPresented: $showIn) {
                 Button("OK", role: .cancel) { }
             }
