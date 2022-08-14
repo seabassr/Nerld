@@ -20,7 +20,7 @@ struct ContentView: View {
     @State private var password: String = ""
     @State private var profile: String = ""
     @State private var home: Bool = false
-    @State private var showIn: Bool = false
+    @State private var showAlert: Bool = false
     private let db = Firestore.firestore()
     
     var body: some View {
@@ -71,7 +71,7 @@ struct ContentView: View {
             .navigationBarHidden(true)
             .navigationBarBackButtonHidden(true)
             .padding()
-            .alert("Username or password is incorrect!", isPresented: $showIn) {
+            .alert("Error, Please Try Again!", isPresented: $showAlert) {
                 Button("OK", role: .cancel) { }
             }
         }
@@ -102,10 +102,12 @@ struct ContentView: View {
                 if (!userData.isEmpty) {
                     if (userData[0].id != "") {
                         self.profile = userData[0].profile
+                        clearLogin()
                         home = true
                     }
                     else {
-                        showIn = true
+                        clearLogin()
+                        showAlert = true
                     }
                 }
             }
@@ -113,7 +115,29 @@ struct ContentView: View {
     }
     
     func signUp() {
-        print("PASS")
+        if (username != "" && password != "") {
+            db.collection("users").whereField("username", isEqualTo: username).getDocuments() {(snapshot, error) in
+                guard snapshot?.documents != nil else {
+                    createUser()
+                    return
+                }
+                
+                clearLogin()
+                showAlert = true
+            }
+        }
+    }
+    
+    func createUser() {
+        db.collection("users").addDocument(data: ["user": username, "profile": profile, "password": self.password])
+        self.profile = "🤓"
+        clearLogin()
+        home = true
+    }
+    
+    func clearLogin() {
+        self.username = ""
+        self.password = ""
     }
 }
 
