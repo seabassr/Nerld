@@ -20,20 +20,32 @@ struct HomeView: View {
         TabView {
             Timeline()
                 .tabItem() {
-                    Image(systemName: "house.fill")
-                    Text("Home")
+                    VStack {
+                        Image(systemName: "house.fill")
+                        Text("Home")
+                    }
                 }
+                .tag(0)
             Compost(user: user, profile: profile)
                 .tabItem() {
-                    Image(systemName: "plus.circle.fill")
-                    Text("Post")
+                    VStack {
+                        Image(systemName: "plus.circle.fill")
+                        Text("Post")
+                    }
                 }
+                .tag(1)
             Profile()
                 .tabItem() {
-                    Image(systemName: "person.fill")
-                    Text("Profile")
+                    VStack {
+                        Image(systemName: "person.fill")
+                        Text("Profile")
+                    }
                 }
+                .tag(2)
         }
+        .navigationBarTitle("")
+        .navigationBarHidden(true)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

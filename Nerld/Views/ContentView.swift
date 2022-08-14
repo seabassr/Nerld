@@ -18,8 +18,9 @@ struct ContentView: View {
     @State private var userData = [UserItem]()
     @State private var username = ""
     @State private var password = ""
+    @State private var profile = ""
+    @State private var home = false
     @State private var showIn = false
-//    @State private var showOut = false
     private let db = Firestore.firestore()
     
     var body: some View {
@@ -60,14 +61,14 @@ struct ContentView: View {
                         .overlay(Text("Sign Up").foregroundColor(.white))
                         .frame(width: 100, height: 50)
                 }
+                
+                NavigationLink(destination: HomeView(user: username, profile: profile), isActive: $home) {EmptyView()}
             }
-            .padding()
+            .navigationBarTitle("")
+            .navigationBarHidden(true)            .padding()
             .alert("Username or password is incorrect!", isPresented: $showIn) {
                 Button("OK", role: .cancel) { }
             }
-//            .alert("User already exist, try signing in!", isPresented: $showOut) {
-//                Button("OK", role: .cancel) { }
-//            }
         }
     }
     
@@ -95,7 +96,8 @@ struct ContentView: View {
                 
                 if (!userData.isEmpty) {
                     if (userData[0].id != "") {
-                        HomeView(user: userData[0].user, profile: userData[0].profile)
+                        self.profile = userData[0].profile
+                        home = true
                     }
                     else {
                         showIn = true
@@ -107,20 +109,6 @@ struct ContentView: View {
     
     func signUp() {
         print("PASS")
-//        if (username != "" && password != "") {
-//            db.collection("users").whereField("username", isEqualTo: username).getDocuments() {(snapshot, error) in
-//                guard let documents = snapshot?.documents else {
-//                    return
-//                }
-//
-//                if (documents.isEmpty) {
-//                    db.collection("users").addDocument(data: ["user": username, "profile": "😃", "password": password])
-//                }
-//                else {
-//                    showOut = true
-//                }
-//            }
-//        }
     }
 }
 
