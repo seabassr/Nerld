@@ -4,7 +4,7 @@ Social media app for iOS, for curious/beginners in programming.
 ## Description
 This iOS app will allow users to share snippets of their code, to everyone on the platform. All posts and users will be stored in Firebase Firestore. Also, users will be be able to customize their profile with preset profile emojis and colors, expressing themselves. Each user will have a unique identification code, which will allows users to save their information on our back-end and login on any iOS device.
 
-As of right now, sign up isn't available. You can use username: "User", password: "Test" as the login.
+As of right now, sign up isn't available. You can use must create a username and password in firestore.
 
 <img src='/walkthrough.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
@@ -23,7 +23,7 @@ As of right now, sign up isn't available. You can use username: "User", password
 
 ## Fixes
 - If you're getting Firebase package errors, you'll need to reinstall Firebase
-1. Go to Chat-Party project (TOP OF SIDE BAR, WITH APP STORE ICON)
+1. Go to Nerld project (TOP OF SIDE BAR, WITH APP STORE ICON)
 2. Go to package dependencies
 3. Click firebase-ios-sdk
 4. Click negative symbol
